@@ -5,6 +5,7 @@
   require_once "models/Profile.php";
   require_once "models/Event.php";
   require_once "models/Event_Category_Relation.php";
+  require_once "models/Event_Category_Relation.php";
   
   session_start();
   

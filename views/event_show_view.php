@@ -8,6 +8,12 @@
       <link rel="stylesheet" href="css/profile.css">
       <link rel="stylesheet" href="css/reset.css">
       <link rel="icon" type="image/png" href="images/favicon.png" sizes="48x48" />
+      <style>
+         #map {
+            width: 300px;
+            height: 300px;
+         }
+      </style>
    </head>
    <body>
       <header>
@@ -98,7 +104,8 @@
                   <section class="flex">
                      <div class="section-item">
                         <h2>開催場所</h2>
-                        <P><?=$event->place?></P>
+                        <P id="place"><?= $event->place ?></P>
+                        <div id="map"></div>
                      </div>
                      <div class="section-item">
                         <h2>参加人数</h2>
@@ -142,6 +149,8 @@
             <button type="submit">コメント投稿</button>            
          </form>
       </footer>
+      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyALg70uaMcYjkzto9oPmiXyODIXCvpvAzg"></script>
+      <script src="js/geocoder.js"></script>
    </body>
 </html>
 

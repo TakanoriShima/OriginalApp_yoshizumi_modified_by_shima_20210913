@@ -4,7 +4,7 @@
 require_once 'models/Model.php';
 require_once 'models/Message.php';
 //いいね設計図
-class Message_Relation extends Model
+class Event_Category_Relation extends Model
 {
     public $id;
     public $send_user_id;   //送信するユーザーid
